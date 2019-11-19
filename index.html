@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="CSSPersonalWebsite.css" />
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.active {
+  background-color: #BDCEFB;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100px;
+  height: 100px;
+  object-fit: scale-down;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#whoami">Who am I?</a></li>
+  <li><a href="experience.html">Experience</a></li>
+  <li><a href="#passions">Passions</a></li>
+  <li><a href="message.php">LinkedIn</a></li
+</ul>
+</style>
+
+<body style="background-color:white;color:grey;">
+
+<br>
+<br>
+<br>
+
+<h1> NICE TO MEET YOU </h1>
+
+  <h2> WHO AM I? </h2>
+
+  <p> Hi! My name is Molly Bomba. I am a Senior at Villanova University with a
+    passion for technology, major in Computer Science and minor in Psychology.
+    Outside of school, I like to browse the internet, go to the gym, and am
+    involved in Special Olympics
+  </p>
+
+
+  <div class="gallery">
+    <a target="_blank" href="worldicon.png">
+      <img src="worldicon.png" alt="The world" width="600" height="400">
+    </a>
+    <div class="desc">  WHERE I'M FROM </div>
+      <div class = "desc"> I am from a small town in Connecticut, and go to college at Villanova University in Pennsylvania.</div>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="bookimage.png">
+      <img src="bookimage.png" alt="A book" width="600" height="400">
+    </a>
+    <div class="desc">  WHAT I'M DOING  </div>
+      <div class = "desc"> I am studying Computer Science and Psychology at Villanova University.
+        I am passionate about consistent learning and constant growth. </div>
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="lightbulbimage.jpg">
+      <img src="lightbulbimage.jpg" alt="A light bulb" width="600" height="400">
+    </a>
+    <div class="desc">  WHAT I'M INTERESTED IN </div>
+      <div class = "desc"> I am interested in technology and the way it improves efficiency and
+        automates everyday mundane tasks, freeing up time for us to focus on
+        tasks that cannot be automated.  </div>
+  </div>
+
+  <br/>
+  <br/>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <h3>Contact Form</h3>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something" style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  </body>
+  </html>
+
+
+</body>
+
+</html>
