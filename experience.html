@@ -6,6 +6,8 @@
 </head>
 <style>
 
+
+
 /*style nav bar*/
 section {
   display: block;
@@ -17,6 +19,7 @@ ul {
   overflow: hidden;
   background-color: #FFFFFF;
 }
+
 
 li {
   float: left;
@@ -44,7 +47,7 @@ li a:hover:not(.active) {
 
 /* Set a background color */
 body {
-  background-color: #474e5d;
+  background-color: black;
   font-family: Helvetica, sans-serif;
 }
 
@@ -59,8 +62,8 @@ body {
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
-  background-color: white;
+  width: 0px;
+  background-color: #bbb;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -69,7 +72,7 @@ body {
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+  padding: 100px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -82,9 +85,9 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #FF78;
-  top: 15px;
+  background-color: #bbb;
+  border: 4px solid grey;
+  top: 150px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -104,13 +107,13 @@ body {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 150px;
   width: 0;
   z-index: 1;
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent white; /*the triangle color */
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -118,7 +121,7 @@ body {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 150px;
   width: 0;
   z-index: 1;
   left: 30px;
@@ -179,7 +182,7 @@ body {
   <li><a href="index.html">Who am I?</a></li>
   <li><a href="experience.html">Experience</a></li>
   <li><a href="passions.html">Passions</a></li>
-  <li><a href="form.html">Contact me</a></li
+  <li><a href="form.html">Contact me</a></li>
 </ul>
 
 <body>
@@ -187,7 +190,7 @@ body {
   <div class="container left">
     <div class="content">
       <h2> 1997 </h2>
-      <p> BROOKFIELD </p>
+      <p style="font-size:25px"> BROOKFIELD </p>
       <br>
       <p>This is where my story began! </p>
     </div>
@@ -195,7 +198,7 @@ body {
   <div class= "container right">
     <div class="content">
       <h2> 2012 </h2>
-      <p> BROOKFIELD PARKS AND RECREATION </p>
+      <p style="font-size:25px"> BROOKFIELD PARKS AND RECREATION </p>
       <br>
       <p> This was the start of my work life! I worked as a Camp Counselor with
         children ages 3 through 14. At this point, I realized my love for
@@ -205,7 +208,7 @@ body {
   <div class="container left">
   <div class="content">
     <h2> 2016 </h2>
-    <p> VILLANOVA UNIVERSITY </p>
+    <p style="font-size:25px"> VILLANOVA UNIVERSITY </p>
     <br>
     <p> Finally the start of my college career began! During my freshman year
     I realized my love for math, logic, and the human mind, which led me to my
@@ -215,7 +218,7 @@ body {
 <div class="container right">
 <div class="content">
   <h2> 2018 </h2>
-  <p> WORKDAY</p>
+  <p style="font-size:25px"> WORKDAY</p>
   <br>
   <p> My first internship was with Workday in Pleasanton, California as an
   Associate Integration Consultant Intern. There, I learned how to work with
@@ -227,7 +230,7 @@ body {
 <div class="container left">
 <div class="content">
   <h2> 2020 </h2>
-  <p> WHAT'S NEXT? </p>
+  <p style="font-size:40px"> WHAT'S NEXT? </p>
   <br>
 </div>
 </div>

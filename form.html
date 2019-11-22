@@ -4,15 +4,26 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="index.html" />
 </head>
+<style>
+
+</style>
+<ul>
+  <li><a class="active" href=index.html>Home</a></li>
+  <li><a href="index.html">Who am I?</a></li>
+  <li><a href="experience.html">Experience</a></li>
+  <li><a href="passions.html">Passions</a></li>
+  <li><a href="form.html">Contact me</a></li>
+</ul>
+
 <body>
   <div class="container">
-    <form action="/action_page.php">
+    <form action="process.php" method="POST">
       <h3>Contact Form</h3>
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your first name">
+      <input type="text" id="firstname" name="firstname" placeholder="Your first name">
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name">
+      <input type="text" id="lastname" name="lastname" placeholder="Your last name">
 
       <label for="country">Country</label>
       <select id="country" name="country">
